@@ -2,10 +2,52 @@
 <%- include ('partials/main_nav.ejs') %>
 
 <main class=”container”>
+    <style>
+        h5{
+            text-align: center;
+        }
+        .bugImage{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .slideshow{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .estate{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
     <div class=”jumbotron”>
         <h1>Welcome to my <%= title %></h1>
     </div>
+    <div>
+        <h5>Bug Smasher Game</h5>
+        <img src="/img/bugGame.png" alt="Bug Game" class="bugImage" height="100px" width="150px">
+        <p>A simple JS game that lets you smash a moving bug, that gets faster every time you hit it.
+            <br>Developed entirely by me from beginning to end.
+        </p>
+    </div>
+    <div>
+        <h5>Slideshow</h5>
+        <img src="/img/slideshow.png" alt="slideshow" class="slideshow" height="100px" width="150px">
+        <p>An interactive sldie show that will scroll through 10+ photos and allow you to add some into a favourites section.
+            <br>Layout was provided but functions of the slideshow done by myself.
+        </p>
+    </div>
+    <div>
+        <h5>RE Agent Page</h5>
+        <img src="/img/estate.png" alt="real estate" class="estate" height="100px" width="150px">
+        <p>A web portfolio designed for a real estate agent. Has an interactive image gallery to view available houses.
+            <br>A section to contact the real estate agent and one to get to knwo him better.
+            <br>Information from real estate agent and images are from the agent, layout and design done by myself.
+        </p>
+    </div>
 </main>
-
+<br><br><br>
 <%- include ('partials/bottom_nav.ejs') %>
 <%- include ('partials/footer.ejs') %>
